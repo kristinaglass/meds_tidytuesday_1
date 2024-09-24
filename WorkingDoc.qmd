@@ -1,0 +1,51 @@
+---
+title: "Working Tidy Tuesday Doc"
+author: "Kristina Glass"
+date: "2024-09-23"
+---
+
+# Working Tidy Tuesday Doc
+
+## Reading in Data
+
+```{r, include = FALSE, echo = FALSE}
+# Get the Data
+
+# Read in with tidytuesdayR package 
+# Install from CRAN via: install.packages("tidytuesdayR")
+# This loads the readme and all the datasets for the week of interest
+
+# Either ISO-8601 date or year/week works!
+
+tuesdata <- tidytuesdayR::tt_load('2022-09-13')
+tuesdata <- tidytuesdayR::tt_load(2022, week = 37)
+
+bigfoot <- tuesdata$bigfoot
+
+# Or read in the data manually
+
+# bigfoot <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-09-13/bigfoot.csv')
+
+```
+
+```{r}
+# Option 1: tidytuesdayR package 
+## install.packages("tidytuesdayR")
+
+tuesdata <- tidytuesdayR::tt_load('2023-10-10')
+## OR
+tuesdata <- tidytuesdayR::tt_load(2023, week = 41)
+
+haunted_places <- tuesdata$haunted_places
+
+# Option 2: Read directly from GitHub
+
+# haunted_places <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2023/2023-10-10/haunted_places.csv')
+
+```
+
+## Data Cleaning
+
+```{r}
+
+```
